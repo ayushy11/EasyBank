@@ -1,12 +1,13 @@
 import React from "react";
-import HEAD from "next/head";
+import Head from "next/head";
 
 const Layout = ({ title, children }) => {
   return (
     <React.Fragment>
-      <HEAD>
+      <Head>
         <title>{title}</title>
-      </HEAD>
+        {/* <link rel="favicon" href="/favicon-32x32.png"/> */}
+      </Head>
       {children}
     </React.Fragment>
   );

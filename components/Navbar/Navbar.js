@@ -32,6 +32,7 @@ function Navbar() {
             display="flex"
             alignItems="center"
             justifyContent="space-between"
+            zIndex="10"
         >
             <Flex pl={{ xs: "1rem", sm: "8rem" }} bg="white">
                 <Image src="images/logo.svg" w="8rem" h="20px" />

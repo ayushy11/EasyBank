@@ -13,7 +13,7 @@ import {
 
 function Features() {
     return (
-        <Section bg="secondaryLight" border="2px solid orange" h="50%">
+        <Section mt="-12rem" bg="red" border="2px solid orange" h="50%">
 
         </Section>
     )

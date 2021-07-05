@@ -27,12 +27,12 @@ function Navbar() {
 
     return (
         <Container
-            border="2px solid black"
+            // border="2px solid black"
             h="4rem"
             display="flex"
             alignItems="center"
             justifyContent="space-between"
-            zIndex="10"
+            zIndex="1000"
         >
             <Flex pl={{ xs: "1rem", sm: "8rem" }} bg="white">
                 <Image src="images/logo.svg" w="8rem" h="20px" />

@@ -13,26 +13,48 @@ import {
 import SecondaryCard from "../common/SecondaryCard";
 
 function Articles() {
-    return (
-        <Section bg="gray" >
-          <Flex
-        flexDirection="column" 
+  return (
+    <Section bg="gray">
+      <Flex
+        flexDirection="column"
         alignItems={{ xs: "center", sm: "flex-start" }}
         justifyContent="space-between"
-        p="3rem"
       >
-        <Flex flexDirection={{xs:"row",sm:"column"}} p="1rem">
-          <Heading>Latest Articles</Heading>         
+        <Flex
+          flexDirection="column"
+          p="1rem"
+          w={{ xs: "180%", sm: "60%" }}
+          mt="4rem"
+          alignItems={{ xs: "center", sm: "flex-start" }}
+          border="2px solid brown"
+        >
+          <Heading
+            textAlign={{ xs: "center", sm: "left" }}
+            fontWeight="500"
+            fontSize={{ xs: "2rem", sm: "2.2rem" }}
+            p={{ xs: "0rem", sm: "1rem" }}
+            color="primaryBlue"
+            fontFamily=""
+          >
+            Latest Articles
+          </Heading>
         </Flex>
-        <Flex p="1rem" flexDirection="column">
+        <Flex
+          border="2px solid brown"
+          p={{xs:"1.5rem",sm:"1rem"}}
+          flexDirection={{ xs: "column", sm: "row" }}
+          width={{ xs: "200%", sm: "100%" }}
+          mb={{ xs: "1.3rem" }}
+         
+        >
           <SecondaryCard />
           <SecondaryCard />
           <SecondaryCard />
           <SecondaryCard />
         </Flex>
       </Flex>
-        </Section>
-    )
+    </Section>
+  );
 }
 
-export default Articles
+export default Articles;

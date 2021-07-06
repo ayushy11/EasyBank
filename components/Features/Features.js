@@ -13,7 +13,9 @@ import {
 
 function Features() {
     return (
-        <Section mt="-12rem" bg="red" border="2px solid orange" h="50%">
+        <Section 
+        mt={{xs:"",sm:"-12rem"}}
+         bg="red" border="2px solid orange" h="50%">
 
         </Section>
     )

@@ -13,20 +13,48 @@ import {
 
 function Footer() {
   return (
-    <Section bg="primaryBlue">
-      <Flex w="100%">
-        <Flex color="white" border="2px solid white" w="50%">
-          <Flex flexDirection="column" p="1.8rem">
+    <Section bg="primaryBlue" px={{xs:"0rem",sm:"5rem"}}>
+      <Flex w="100%" flexDirection={{xs:"column",sm:"row"}}>
+        <Flex
+          color="white"
+          border="2px solid orange"
+          w={{xs:"100%",sm:"70%"}}
+          px="2rem"
+          my="1rem"
+          flexDirection={{xs:"column",sm:"row"}}
+        >
+          <Flex flexDirection="column" p={{xs:"1rem",sm:"1.8rem"}} alignItems="center">
             <Image src="images/logoWhite.svg" w="8rem" h="20px" />
-            <Flex p="1rem">
-              <Image src="images/icon-facebook.svg" boxSize="1.6rem" />
-              <Image src="images/icon-youtube.svg" boxSize="1.6rem" />
-              <Image src="images/icon-twitter.svg" boxSize="1.6rem" />
-              <Image src="images/icon-pinterest.svg" boxSize="1.6rem" />
-              <Image src="images/icon-instagram.svg" boxSize="1.6rem" />
+            <Flex py={{xs:"2rem",sm:"3.3rem"}} pb={{xs:"0rem"}}>
+              <Image
+                src="images/icon-facebook.svg"
+                boxSize="1.4rem"
+                ml="0.5rem"
+              />
+              <Image
+                src="images/icon-youtube.svg"
+                boxSize="1.4rem"
+                ml="0.5rem"
+              />
+              <Image
+                src="images/icon-twitter.svg"
+                boxSize="1.4rem"
+                ml="0.5rem"
+              />
+              <Image
+                src="images/icon-pinterest.svg"
+                boxSize="1.4rem"
+                ml="0.5rem"
+              />
+              <Image
+                src="images/icon-instagram.svg"
+                boxSize="1.4rem"
+                ml="0.5rem"
+              />
             </Flex>
           </Flex>
           <Flex
+            ml={{sm:"2rem"}}
             sx={{
               li: {
                 listStyle: "none",
@@ -34,7 +62,8 @@ function Footer() {
               },
             }}
             flexDirection="column"
-            p="1rem"
+            p={{xs:"0rem",sm:"1rem"}}
+            alignItems={{xs:"center",sm:"flex-start"}}
           >
             <li>
               <Link>About us</Link>
@@ -54,7 +83,9 @@ function Footer() {
               },
             }}
             flexDirection="column"
-            p="1rem"
+            p={{xs:"0rem",sm:"1rem"}}
+            ml={{sm:"2rem"}}
+            alignItems={{xs:"center",sm:"flex-start"}}
           >
             <li>
               <Link>Careers</Link>
@@ -70,15 +101,15 @@ function Footer() {
         <Flex
           color="white"
           flexDirection="column"
-          alignItems="flex-end"
+          alignItems={{xs:"center",sm:"flex-end"}}
           border="2px solid white"
-          p="1rem"
-          w="50%"
+          p={{xs:"0rem",sm:"2.5rem"}}
+          w={{xs:"100%",sm:"50%"}}
         >
           <Button variant="primary" display="block">
             request invite
           </Button>
-          <Text>&#169; Easybank. All Rights Reserved</Text>
+          <Text p="1.5rem" textAlign="center">&#169; Easybank. All Rights Reserved</Text>
         </Flex>
       </Flex>
     </Section>

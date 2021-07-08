@@ -8,7 +8,6 @@ import {
   Heading,
   Button,
   Image,
-  Link,
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
@@ -54,7 +53,12 @@ function Navbar() {
         alignItems="center"
         sx={{
           li: {
+            listStyle:"none",
             p: "0.8rem",
+            "&:hover": {
+              borderBottom: "4px",
+              borderBottomColor: "#31d35c",
+            },
           },
         }}
         fontSize={{ xs: "md", sm: "sm" }}
@@ -62,19 +66,19 @@ function Navbar() {
         zIndex="10000000"
       >
         <li>
-          <Link>Home</Link>
+          <a>Home</a>
         </li>
         <li>
-          <Link>About</Link>
+          <a>About</a>
         </li>
         <li>
-          <Link>Contact</Link>
+          <a>Contact</a>
         </li>
         <li>
-          <Link>Blog</Link>
+          <a>Blog</a>
         </li>
         <li>
-          <Link>Careers</Link>
+          <a>Careers</a>
         </li>
       </Flex>
       <Flex pr="8rem">

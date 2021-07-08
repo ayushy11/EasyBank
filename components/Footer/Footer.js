@@ -17,7 +17,7 @@ function Footer() {
       <Flex w="100%" flexDirection={{xs:"column",sm:"row"}}>
         <Flex
           color="white"
-          border="2px solid orange"
+          // border="2px solid orange"
           w={{xs:"100%",sm:"70%"}}
           px="2rem"
           my="1rem"
@@ -102,7 +102,7 @@ function Footer() {
           color="white"
           flexDirection="column"
           alignItems={{xs:"center",sm:"flex-end"}}
-          border="2px solid white"
+          // border="2px solid white"
           p={{xs:"0rem",sm:"2.5rem"}}
           w={{xs:"100%",sm:"50%"}}
         >

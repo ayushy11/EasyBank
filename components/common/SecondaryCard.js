@@ -11,7 +11,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-function SecondaryCard() {
+function SecondaryCard({ title, author, img, content }) {
   return (
     <Flex
       flexDirection="column"
@@ -20,21 +20,16 @@ function SecondaryCard() {
       bg="white"
       borderTopRadius="0.5rem"
     >
-      <Image
-        src="images/image-currency.jpg"
-        h="45%"
-        w="100%"
-        zIndex="10"
-        borderTopRadius="0.5rem"
-      />
+      <Image src={img} h="45%" w="100%" zIndex="10" borderTopRadius="0.5rem" />
       <Flex flexDirection="column" p="1.2rem">
         <Text
           color="secondaryBlue"
           //   textAlign={{ xs: "center", sm: "left" }}
           fontSize="0.8rem"
           py="0.5rem"
+          textTransform="capitalize"
         >
-          By claire robinson
+          {author}
         </Text>
         <Heading
           //   textAlign={{ xs: "center", sm: "left" }}
@@ -45,7 +40,7 @@ function SecondaryCard() {
           fontFamily=""
           //   mb={{ xs: "0rem", sm: "0rem" }}
         >
-          Receive money in any currency with no fees
+          {title}
         </Heading>
         <Text
           color="secondaryBlue"
@@ -53,8 +48,7 @@ function SecondaryCard() {
           fontSize={{ xs: "0.8rem", sm: "0.875rem" }}
           py="1rem"
         >
-          Our modern web and mobile applications allow you to keep track of your
-          finances wherever you are in the world.
+          {content}
         </Text>
       </Flex>
     </Flex>

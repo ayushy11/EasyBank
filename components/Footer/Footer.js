@@ -13,23 +13,32 @@ import {
 
 function Footer() {
   return (
-    <Section bg="primaryBlue" px={{xs:"0rem",sm:"5rem"}}>
-      <Flex w="100%" flexDirection={{xs:"column",sm:"row"}}>
+    <Section bg="primaryBlue" px={{ xs: "0rem", sm: "5rem" }}>
+      <Flex w="100%" flexDirection={{ xs: "column", sm: "row" }}>
         <Flex
           color="white"
           // border="2px solid orange"
-          w={{xs:"100%",sm:"70%"}}
+          w={{ xs: "100%", sm: "70%" }}
           px="2rem"
           my="1rem"
-          flexDirection={{xs:"column",sm:"row"}}
+          flexDirection={{ xs: "column", sm: "row" }}
         >
-          <Flex flexDirection="column" p={{xs:"1rem",sm:"1.8rem"}} alignItems="center">
+          <Flex
+            flexDirection="column"
+            p={{ xs: "1rem", sm: "1.8rem" }}
+            alignItems="center"
+          >
             <Image src="images/logoWhite.svg" w="8rem" h="20px" />
-            <Flex py={{xs:"2rem",sm:"3.3rem"}} pb={{xs:"0rem"}}>
+            <Flex py={{ xs: "2rem", sm: "3.3rem" }} pb={{ xs: "0rem" }}>
               <Image
                 src="images/icon-facebook.svg"
                 boxSize="1.4rem"
                 ml="0.5rem"
+                sx={{
+                  "&:hover": {
+                    color: "#31d35c",
+                  },
+                }}
               />
               <Image
                 src="images/icon-youtube.svg"
@@ -54,25 +63,28 @@ function Footer() {
             </Flex>
           </Flex>
           <Flex
-            ml={{sm:"2rem"}}
+            ml={{ sm: "2rem" }}
             sx={{
               li: {
                 listStyle: "none",
                 padding: "0.5rem",
+                "&:hover": {
+                  color: "#31d35c",
+                },
               },
             }}
             flexDirection="column"
-            p={{xs:"0rem",sm:"1rem"}}
-            alignItems={{xs:"center",sm:"flex-start"}}
+            p={{ xs: "0rem", sm: "1rem" }}
+            alignItems={{ xs: "center", sm: "flex-start" }}
           >
             <li>
-              <Link>About us</Link>
+              <a>About us</a>
             </li>
             <li>
-              <Link>Contact</Link>
+              <a>Contact</a>
             </li>
             <li>
-              <Link>Blog</Link>
+              <a>Blog</a>
             </li>
           </Flex>
           <Flex
@@ -80,36 +92,41 @@ function Footer() {
               li: {
                 listStyle: "none",
                 padding: "0.5rem",
+                "&:hover": {
+                  color: "#31d35c",
+                },
               },
             }}
             flexDirection="column"
-            p={{xs:"0rem",sm:"1rem"}}
-            ml={{sm:"2rem"}}
-            alignItems={{xs:"center",sm:"flex-start"}}
+            p={{ xs: "0rem", sm: "1rem" }}
+            ml={{ sm: "2rem" }}
+            alignItems={{ xs: "center", sm: "flex-start" }}
           >
             <li>
-              <Link>Careers</Link>
+              <a>Careers</a>
             </li>
             <li>
-              <Link>Support</Link>
+              <a>Support</a>
             </li>
             <li>
-              <Link>Privacy Policy</Link>
+              <a>Privacy Policy</a>
             </li>
           </Flex>
         </Flex>
         <Flex
           color="white"
           flexDirection="column"
-          alignItems={{xs:"center",sm:"flex-end"}}
+          alignItems={{ xs: "center", sm: "flex-end" }}
           // border="2px solid white"
-          p={{xs:"0rem",sm:"2.5rem"}}
-          w={{xs:"100%",sm:"50%"}}
+          p={{ xs: "0rem", sm: "2.5rem" }}
+          w={{ xs: "100%", sm: "50%" }}
         >
           <Button variant="primary" display="block">
             request invite
           </Button>
-          <Text p="1.5rem" textAlign="center">&#169; Easybank. All Rights Reserved</Text>
+          <Text p="1.5rem" textAlign="center">
+            &#169; Easybank. All Rights Reserved
+          </Text>
         </Flex>
       </Flex>
     </Section>

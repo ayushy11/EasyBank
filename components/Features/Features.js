@@ -15,7 +15,7 @@ import Card from "../common/Card";
 function Features() {
   return (
     <Section
-      mt={{ xs: "", sm: "-12rem" }}
+      mt={{ xs: "",  xl: "-12rem" }}
       // bg="#f9f9f9"
       bg="secondaryLight"
       // border="2px solid orange"
